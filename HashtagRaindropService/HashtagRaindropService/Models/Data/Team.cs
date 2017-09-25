@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Web;
 
-namespace HashtagRaindropService.Models
+namespace HashtagRaindropService.Models.Data
 {
     public class Team
     {

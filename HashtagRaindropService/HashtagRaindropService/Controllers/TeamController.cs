@@ -11,9 +11,9 @@ using System.Web.Http.Cors;
 namespace HashtagRaindropService.Controllers
 {
     [EnableCors(origins: "*", headers: "*", methods: "*")]
-    public class PlayerController : ApiController
+    public class TeamController : ApiController
     {
-        [Route("players/")]
+        [Route("teams/")]
         [AcceptVerbs("GET")]
         public IHttpActionResult GetAll()
         {
@@ -37,7 +37,7 @@ namespace HashtagRaindropService.Controllers
                 player.Team.Attempts += player.Attempts;
             }
 
-            return Ok(players);
+            return Ok(teams);
         }
     }
 }

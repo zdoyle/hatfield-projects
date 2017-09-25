@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Web;
 
-namespace HashtagRaindropService.Models
+namespace HashtagRaindropService.Models.Data
 {
     public class Player
     {
@@ -12,6 +12,7 @@ namespace HashtagRaindropService.Models
         public string LastName { get; set; }
         public Team Team { get; set; }
         public string AvatarURL { get; set; }
+        public string TwitterUsername { get; set; }
         public int Score { get; set; }
         public int Makes { get; set; }
         public int Misses { get; set; }
